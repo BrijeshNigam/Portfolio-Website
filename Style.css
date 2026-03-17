@@ -133,16 +133,38 @@ body {
 .profile-page p{
     text-align: justify;
 }
+.profile-page .btn-box{
+    margin-top: 1.2rem;
+}
 
-.btn{
+.btn {
     display: inline-block;
+    justify-content: center;
+    align-items: center;
     width: 9.5rem;
     height: 3rem;
     background-color: var(--main-color);
     border: var(--border);
     border-radius: .3rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--white-color);
     text-align: center;
     font-weight: 500;
+    margin: 0 1rem;
+    transition: .5s;
+}
+
+.btn.hover {
+    background: transparent;
+    color: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2){
+    background: transparent;
+    color: var(--main-color);
+
+}
+.btn-box .btn:nth-child(2):hover{
+    background-color: var(--main-color);
+    color: var(--white-color);
 }
